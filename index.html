@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>cppio</title>
-        <link rel="icon" href="//avatars2.githubusercontent.com/u/31370288"/>
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/31370288"/>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+/*            @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');*/
             body {
                 display: flex;
                 flex-direction: column;
@@ -30,6 +30,10 @@
             a span {
                 transition: 0.5s;
                 text-shadow: 0 0 4px black;
+                opacity: 0;
+            }
+            .wf-active a span {
+                opacity: 1;
             }
             a:hover {
                 box-shadow: inset 0 0 16px white;
@@ -41,15 +45,17 @@
         </style>
     </head>
     <body>
-        <a href="//github.com/cppio/format-term" style="background-image: url('format-term.png');">
+        <a href="https://github.com/cppio/format-term" style="background-image: url('format-term.png');">
             <span>format-term</span>
         </a>
-        <a href="//github.com/cppio/SpriteBounceSDL" style="background-image: url('SpriteBounceSDL.png');">
+        <a href="https://github.com/cppio/SpriteBounceSDL" style="background-image: url('SpriteBounceSDL.png');">
             <span>SpriteBounceSDL</span>
         </a>
-        <a href="//github.com/cppio/format-term" style="background-image: url('web-telnet.png');">
+        <a href="https://github.com/cppio/format-term" style="background-image: url('web-telnet.png');">
             <span>web-telnet</span>
         </a>
     </body>
     <script>console.log(Date.now(), "preload");addEventListener("load", () => console.log(Date.now(), "load"));</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Roboto Mono:100"]}});</script>
 </html>
